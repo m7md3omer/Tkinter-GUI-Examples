@@ -1,6 +1,7 @@
-from tkinter import *
-from tkinter import ttk
+# entering string, integer, double and boolean data
+# use event handling methods to handle button clicks
 
+from tkinter import *
 
 def handle(event):
     if boolVar.get():
