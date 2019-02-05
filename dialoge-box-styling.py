@@ -9,6 +9,7 @@ def showMsgBox():
     messagebox.showinfo("the title", "hey error")
 
 root = Tk()
+# the syntax of geometry is : widthxhight+paddingx+paddingy
 root.geometry("400x400+100+100")
 root.resizable(False,False)
 frame = Frame(root)
