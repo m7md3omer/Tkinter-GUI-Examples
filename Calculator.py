@@ -39,6 +39,7 @@ class Calculator:
             print(e)
 
     def math_button_press(self, value):
+        self.equal_button_press()
         print(self.prev)
         self.prev = self.entry_val.get()
         self.addButton = False
@@ -55,7 +56,6 @@ class Calculator:
         else:
             self.subButton = True
 
-        self.entry_val.set("")
 
     def button_press(self, value):
         if self.clear:
