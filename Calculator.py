@@ -12,9 +12,8 @@ class Calculator:
     def clear_button_press(self):
         self.entry_val.set("")
         if self.from_equals:
-            self.prev = 0.0
-
-
+             self.prev = 0.0
+             
     def equal_button_press(self):
         self.clear = True
         try:
@@ -30,6 +29,12 @@ class Calculator:
 
                 self.entry_val.set(result)
                 self.prev = result
+                self.addButton = False
+                self.subButton = False
+                self.mulButton = False
+                self.divButton = False
+
+
         except Exception as e:
             print(e)
 
