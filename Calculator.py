@@ -27,7 +27,12 @@ class Calculator:
                 elif self.mulButton:
                     result = float(self.prev) * float(self.entry_val.get())
 
-                self.entry_val.set(result)
+                if result == int(result):
+                    result = int(result)
+                    self.entry_val.set(result)
+                else:
+                    self.entry_val.set(result)
+
                 self.prev = result
                 self.addButton = False
                 self.subButton = False
